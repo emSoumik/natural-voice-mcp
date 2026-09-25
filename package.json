@@ -1,11 +1,13 @@
 {
   "name": "@emsoumik/natural-voice-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "A read-only Natural Voice MCP server on Cloudflare Workers.",
   "license": "MIT",
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build:content": "node scripts/generate-playbook.mjs",
     "typecheck": "tsc --noEmit",
@@ -14,7 +16,12 @@
     "dev": "npm run build:content && wrangler dev",
     "deploy": "npm run check && wrangler deploy"
   },
-  "keywords": ["mcp", "natural-voice", "cloudflare-workers", "writing"],
+  "keywords": [
+    "mcp",
+    "natural-voice",
+    "cloudflare-workers",
+    "writing"
+  ],
   "dependencies": {
     "@modelcontextprotocol/server": "2.0.0",
     "agents": "0.24.0",

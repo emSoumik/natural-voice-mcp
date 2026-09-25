@@ -44,7 +44,7 @@ The existing local `natural-voice` skill is not deleted or changed. A fresh Code
 
 Registers: `text`, `default`, `broadcast`, `pro`, `formal`. The default is for most posts. Use `pro` for professional email, including cold outreach.
 
-The content comes from the user-provided `natural-voice.zip`. The public repository includes the writing guidance, real sample text, and original Python checker. The server bundles all guidance at build time, so it has no runtime GitHub dependency. It does not fabricate personal facts or send messages.
+The complete source skill from the supplied ZIP is under [`skills/natural-voice/`](skills/natural-voice/): `SKILL.md`, five references, `agents/openai.yaml`, the icon, and the original Python checker. The plugin icon uses the supplied SVG. The server bundles this same skill and its references at build time, so it has no runtime GitHub dependency. It does not fabricate personal facts or send messages.
 
 ## Develop
 
@@ -58,7 +58,7 @@ npm run dev
 
 The local endpoint is `http://localhost:8787/mcp` unless Wrangler prints a different port. `npm run check` generates the content module, type-checks, runs tests, and performs a Worker dry run. `npm run deploy` repeats those checks and deploys to the account in `wrangler.jsonc`.
 
-To change the public voice material, edit `content/` and rerun `npm run build:content`. Do not edit the generated `src/playbook.ts`. Review public examples before every push. Do not add private client drafts, credentials, or contact data.
+To change the public voice material, edit `skills/natural-voice/` and rerun `npm run build:content`. Do not edit the generated `src/playbook.ts`. Review public examples before every push. Do not add private client drafts, credentials, or contact data.
 
 ## Limits
 

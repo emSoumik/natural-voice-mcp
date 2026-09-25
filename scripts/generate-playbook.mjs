@@ -1,12 +1,12 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 const files = [
-  'content/SKILL.md',
-  'content/references/voice-profile.md',
-  'content/references/registers.md',
-  'content/references/ai-tells.md',
-  'content/references/word-bank.md',
-  'content/references/examples.md',
+  'skills/natural-voice/SKILL.md',
+  'skills/natural-voice/references/voice-profile.md',
+  'skills/natural-voice/references/registers.md',
+  'skills/natural-voice/references/ai-tells.md',
+  'skills/natural-voice/references/word-bank.md',
+  'skills/natural-voice/references/examples.md',
 ];
 
 const sections = await Promise.all(files.map(async (path) =>
