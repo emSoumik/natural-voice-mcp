@@ -36,7 +36,16 @@ function createServer() {
   return server;
 }
 
-const handler = createMcpHandler(createServer);
+const handler = createMcpHandler(createServer, {
+  allowedOriginHostnames: [
+    'localhost',
+    '127.0.0.1',
+    'natural-voice-mcp.cold-mail-agent.workers.dev',
+    'chatgpt.com',
+    'claude.ai',
+    'playground.ai.cloudflare.com',
+  ],
+});
 
 export default {
   fetch(request: Request, env: unknown, ctx: ExecutionContext) {

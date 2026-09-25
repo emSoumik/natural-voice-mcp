@@ -24,6 +24,17 @@ For a client that accepts an MCP server URL:
 
 The endpoint is public and needs no authentication. Do not send confidential drafts to a public service unless your own privacy requirements allow it. The Worker processes tool input in memory, has no database or analytics binding, and does not call a model or store drafts. Cloudflare may still process normal service logs according to your account settings.
 
+## Install the Codex plugin
+
+This repository includes a Codex plugin manifest, a remote MCP connection, and a small skill that invokes the two tools. Add its marketplace and install the plugin:
+
+```sh
+codex plugin marketplace add emSoumik/natural-voice-mcp --ref main
+codex plugin add natural-voice@natural-voice-repo
+```
+
+The existing local `natural-voice` skill is not deleted or changed. A fresh Codex task may be needed to load the newly installed plugin.
+
 ## Tools
 
 | Tool | Purpose |
