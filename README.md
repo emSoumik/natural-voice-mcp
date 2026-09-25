@@ -44,7 +44,7 @@ The existing local `natural-voice` skill is not deleted or changed. A fresh Code
 
 Registers: `text`, `default`, `broadcast`, `pro`, `formal`. The default is for most posts. Use `pro` for professional email, including cold outreach.
 
-The complete source skill from the supplied ZIP is under [`skills/natural-voice/`](skills/natural-voice/): `SKILL.md`, five references, `agents/openai.yaml`, the icon, and the original Python checker. The plugin icon uses the supplied SVG. The server bundles this same skill and its references at build time, so it has no runtime GitHub dependency. It does not fabricate personal facts or send messages.
+The complete source skill from the supplied ZIP is under [`skills/natural-voice/`](skills/natural-voice/): `SKILL.md`, five references, `agents/openai.yaml`, the icon, and the original Python checker. The plugin uses a custom Natural Voice icon: a speech bubble with a compact `n.` mark. The editable SVG and a 512px PNG are in `assets/` and the skill package. The server bundles this same skill and its references at build time, so it has no runtime GitHub dependency. It does not fabricate personal facts or send messages.
 
 ## Develop
 

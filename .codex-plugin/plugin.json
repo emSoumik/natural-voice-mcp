@@ -1,6 +1,6 @@
 {
   "name": "natural-voice",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Write and rewrite in Soumik's natural voice through a Cloudflare-hosted MCP playbook and checker.",
   "author": {
     "name": "Soumik"
@@ -16,6 +16,6 @@
     "capabilities": [],
     "defaultPrompt": "Rewrite this in my natural voice without changing the facts.",
     "composerIcon": "./assets/icon.svg",
-    "logo": "./assets/icon.svg"
+    "logo": "./assets/icon.png"
   }
 }

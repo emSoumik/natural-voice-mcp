@@ -7,7 +7,7 @@ import { lintVoice } from './lint';
 const registers = ['text', 'default', 'broadcast', 'pro', 'formal'] as const;
 
 function createServer() {
-  const server = new McpServer({ name: 'natural-voice', version: '1.0.1' });
+  const server = new McpServer({ name: 'natural-voice', version: '1.0.2' });
 
   server.registerTool('natural_voice_guidance', {
     description: 'Load Soumik\'s public natural-voice playbook before drafting or rewriting text that will be sent under his name. The connected AI client writes the final text. Preserve supplied facts, links, names, and requested length. Do not invent details.',

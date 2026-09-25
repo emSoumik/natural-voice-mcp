@@ -2,7 +2,7 @@ interface:
   display_name: natural voice
   short_description: Write and rewrite in Soumik's natural voice
   icon_small: assets/icon.svg
-  icon_large: assets/icon.svg
+  icon_large: assets/icon.png
   default_prompt: Use $natural-voice to rewrite this so it sounds like me.
 policy:
   allow_implicit_invocation: true
