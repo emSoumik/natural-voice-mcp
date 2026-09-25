@@ -1,0 +1,17 @@
+{
+  "name": "natural-voice",
+  "version": "1.0.0",
+  "description": "Write and rewrite in Soumik's natural voice through a Cloudflare-hosted MCP playbook and checker.",
+  "author": { "name": "Soumik" },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Natural Voice",
+    "shortDescription": "Write and check text in Soumik's voice.",
+    "longDescription": "Loads Soumik's natural-voice playbook over MCP and checks drafts for mechanical AI tells without storing text.",
+    "developerName": "Soumik",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Rewrite this in my natural voice without changing the facts."
+  }
+}

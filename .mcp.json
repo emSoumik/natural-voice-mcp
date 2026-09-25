@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "natural-voice": {
+      "type": "http",
+      "url": "https://natural-voice-mcp.cold-mail-agent.workers.dev/mcp"
+    }
+  }
+}
